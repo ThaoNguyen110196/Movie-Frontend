@@ -12,7 +12,7 @@ A web-based interface for watching and managing movies, built with HTML, CSS, an
 ## 📌Installation
 
 1. Clone the repository:
-    - git clone https://github.com/your-username/movie-frontend.git
+    - git clone https://github.com/thaonguyen110196/movie-frontend.git
 2. Open index.html in your browser.
 
 ## 📧 Contact
