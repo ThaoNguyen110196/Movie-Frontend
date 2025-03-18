@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Movie - Best movie collections</title>
+
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+
+        <!-- Ionicons -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+        <!-- Owl-Carousel-2 CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+            integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+            integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="header">
+            <div class="container">
+                <div class="header-left">
+                    <div class="header-brand">
+                        <a href="index.html">
+                            <img src="img/img-logo/logo.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="header-user">
+                        <ion-icon name="person-circle-outline" class="userBtn"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- END HEADER -->
+
+        <!-- FORM -->
+        <div class="form">
+            <div class="login-link">
+                <p class="side-big-heading">Create your account</p>
+                <p class="primary-bg-text">To keep track on your dashboard please login with your personal info</p>
+                <a href="register.html" class="loginBtn">Register now</a>
+            </div>
+            <form action="" class="signup-form">
+                <p class="big-heading">Login to your account</p>
+                <div class="social-media-platform">
+                    <a href="#" class="icon" style="--color: #3b5998">
+                        <span><ion-icon name="logo-facebook"></ion-icon></span>
+                    </a>
+                    <a href="#" class="icon" style="--color: #1da1f2">
+                        <span><ion-icon name="logo-twitter"></ion-icon></span>
+                    </a>
+                    <a href="#" class="icon" style="--color: #34a853">
+                        <span><ion-icon name="logo-google"></ion-icon></span>
+                    </a>
+                </div>
+                <div class="login-form">
+                    <div class="stage1-content">
+                        <div class="button-container">
+                            <div class="text-fields">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    required=""
+                                    onkeyup="this.setAttribute('value', this.value);"
+                                    value=""
+                                    pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/"
+                                    required
+                                />
+                                <label>Enter email</label>
+                            </div>
+                            <div class="text-fields">
+                                <input
+                                    type="password"
+                                    name="password"
+                                    required=""
+                                    onkeyup="this.setAttribute('value', this.value);"
+                                    value=""
+                                />
+                                <label>Password</label>
+                            </div>
+                            <input type="submit" value="Login" class="nextPage" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- END FORM -->
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-left">
+                <h3>Payment Method</h3>
+                <div class="credit-cards">
+                    <img src="img/img-logo/visa.png" alt="" />
+                    <img src="img/img-logo/mastercard.png" alt="" />
+                    <img src="img/img-logo/paypal.png" alt="" />
+                </div>
+                <p class="footer-copyright">2023 Group 3</p>
+            </div>
+
+            <div class="footer-center">
+                <h4 class="footer-contact">Contact</h4>
+                <div>
+                    <ion-icon name="location-outline"></ion-icon>
+                    <p><span>Hồ Chí Minh</span> 391A Đ. Nam Kỳ Khởi Nghĩa</p>
+                </div>
+                <div>
+                    <ion-icon name="call-outline"></ion-icon>
+                    <p>+098-157-89-20</p>
+                </div>
+                <div>
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <p><a href="#">support@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <p class="footer-about">
+                    <span>About</span>
+                    Cái gì đó
+                </p>
+
+                <div class="footer-media">
+                    <a href="#" class="icon" style="--color: #3b5998">
+                        <span><ion-icon name="logo-facebook"></ion-icon></span>
+                    </a>
+                    <a href="#" class="icon" style="--color: #1da1f2">
+                        <span><ion-icon name="logo-twitter"></ion-icon></span>
+                    </a>
+                    <a href="#" class="icon" style="--color: #34a853">
+                        <span><ion-icon name="logo-google"></ion-icon></span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="js/javascript.js"></script>
+</html>

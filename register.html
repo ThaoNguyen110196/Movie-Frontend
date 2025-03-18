@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Movie - Best movie collections</title>
+
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+
+        <!-- Ionicons -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+        <!-- Owl-Carousel-2 CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+            integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+            integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="header">
+            <div class="container">
+                <div class="header-left">
+                    <div class="header-brand">
+                        <a href="index.html">
+                            <img src="img/img-logo/logo.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="header-user">
+                        <ion-icon name="person-circle-outline" class="userBtn"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- END HEADER -->
+
+        <!-- FORM -->
+        <div class="form">
+            <div class="login-link">
+                <p class="side-big-heading">Already a member ?</p>
+                <p class="primary-bg-text">To keep track on your dashboard please login with your personal info</p>
+                <a href="login.html" class="loginBtn">Login</a>
+            </div>
+            <form action="" class="signup-form">
+                <p class="big-heading">Create Account</p>
+                <div class="social-media-platform">
+                    <a href="#" class="icon" style="--color: #3b5998">
+                        <span><ion-icon name="logo-facebook"></ion-icon></span>
+                    </a>
+                    <a href="#" class="icon" style="--color: #1da1f2">
+                        <span><ion-icon name="logo-twitter"></ion-icon></span>
+                    </a>
+                    <a href="#" class="icon" style="--color: #34a853">
+                        <span><ion-icon name="logo-google"></ion-icon></span>
+                    </a>
+                </div>
+                <div class="progress-bar">
+                    <div class="stage">
+                        <p class="tool-tip">STEP <b>1</b> OF <b>3</b></p>
+                        <p class="stageno stageno-1">1</p>
+                    </div>
+                    <div class="stage">
+                        <p class="tool-tip">STEP <b>2</b> OF <b>3</b></p>
+                        <p class="stageno stageno-2">2</p>
+                    </div>
+                    <div class="stage">
+                        <p class="tool-tip">STEP <b>3</b> OF <b>3</b></p>
+                        <p class="stageno stageno-3">3</p>
+                    </div>
+                </div>
+                <div class="signup-form-content">
+                    <div class="stage1-content">
+                        <h4>Create a password to start your membership</h4>
+                        <p>Just a few more steps and you're done! .</p>
+                        <p>We hate paperwork, too.</p>
+                        <div class="button-container">
+                            <div class="text-fields">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    required
+                                    onkeyup="this.setAttribute('value', this.value);"
+                                    value=""
+                                    pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+                                />
+                                <label>Enter email</label>
+                            </div>
+                            <div class="text-fields">
+                                <input
+                                    type="password"
+                                    name="password"
+                                    id="password"
+                                    required
+                                    onkeyup="this.setAttribute('value', this.value);"
+                                    value=""
+                                />
+                                <label>Password</label>
+                            </div>
+                            <div class="pagination-btns">
+                                <button class="nextPage stagebtn1b" onclick="validateFieldsAndProceed()">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stage2-content">
+                        <div class="button-container">
+                            <div class="text">
+                                <h3>Choose your plan.</h3>
+                                <p>
+                                    <ion-icon name="checkmark-outline"></ion-icon>
+                                    No commitments, cancel anytime.
+                                </p>
+                                <p>
+                                    <ion-icon name="checkmark-outline"></ion-icon>
+                                    Everything on Netflix for one low price.
+                                </p>
+                                <p>
+                                    <ion-icon name="checkmark-outline"></ion-icon>
+                                    No ads and no extra fees. Ever.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pagination-btns">
+                            <input
+                                type="button"
+                                value="Previous"
+                                class="previousPage stagebtn2a"
+                                onclick="stage1to8()"
+                            />
+                            <input type="button" value="Next" class="nextPage stagebtn2b" onclick="stage3to8()" />
+                        </div>
+                    </div>
+                    <div class="stage3-content">
+                        <div class="button-container">
+                            <div class="text">
+                                <h3>Choose the plan that's right for you.</h3>
+
+                                <div class="cards-price">
+                                    <div class="card-price">
+                                        <div class="title-price">
+                                            <p>Month</p>
+                                            <p>160,000 đ</p>
+                                        </div>
+                                        <div class="content-price">
+                                            <div class="card-content">
+                                                <div class="card-set">
+                                                    <ion-icon name="checkmark-outline"></ion-icon>
+                                                    <div class="content">
+                                                        <p>Month</p>
+                                                        <p>260,000 đ</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-set">
+                                                    <ion-icon name="checkmark-outline"></ion-icon>
+                                                    <div class="content">
+                                                        <p>Resolution</p>
+                                                        <p>4K (Ultra HD) + HDR</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-set">
+                                                    <ion-icon name="checkmark-outline"></ion-icon>
+                                                    <div class="content">
+                                                        <p>Video quality</p>
+                                                        <p>Best</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-set">
+                                                    <ion-icon name="checkmark-outline"></ion-icon>
+                                                    <div class="content">
+                                                        <p>Supported devices</p>
+                                                        <p>TV, computer, mobile phone, tablet</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-price">
+                                        <div class="title-price">
+                                            <p>6 Months</p>
+                                            <p>300,000 đ</p>
+                                        </div>
+                                        <div class="content-price">
+                                            <div class="card-content">
+                                                <div class="card-set">
+                                                    <ion-icon name="checkmark-outline"></ion-icon>
+                                                    <div class="content">
+                                                        <p>Month</p>
+                                                        <p>160,000 đ</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-set">
+                                                    <ion-icon name="checkmark-outline"></ion-icon>
+                                                    <div class="content">
+                                                        <p>Resolution</p>
+                                                        <p>4K (Ultra HD) + HDR</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-set">
+                                                    <ion-icon name="checkmark-outline"></ion-icon>
+                                                    <div class="content">
+                                                        <p>Video quality</p>
+                                                        <p>Best</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-set">
+                                                    <ion-icon name="checkmark-outline"></ion-icon>
+                                                    <div class="content">
+                                                        <p>Supported devices</p>
+                                                        <p>TV, computer, mobile phone, tablet</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-price">
+                                        <div class="title-price">
+                                            <p>Year</p>
+                                            <p>560,000 đ</p>
+                                        </div>
+                                        <div class="content-price">
+                                            <div class="card-content">
+                                                <div class="card-set">
+                                                    <ion-icon name="checkmark-outline"></ion-icon>
+                                                    <div class="content">
+                                                        <p>Month</p>
+                                                        <p>260,000 đ</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-set">
+                                                    <ion-icon name="checkmark-outline"></ion-icon>
+                                                    <div class="content">
+                                                        <p>Resolution</p>
+                                                        <p>4K (Ultra HD) + HDR</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-set">
+                                                    <ion-icon name="checkmark-outline"></ion-icon>
+                                                    <div class="content">
+                                                        <p>Video quality</p>
+                                                        <p>Best</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-set">
+                                                    <ion-icon name="checkmark-outline"></ion-icon>
+                                                    <div class="content">
+                                                        <p>Supported devices</p>
+                                                        <p>TV, computer, mobile phone, tablet</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination-btns">
+                            <input
+                                type="button"
+                                value="Previous"
+                                class="previousPage stagebtn3a"
+                                onclick="stage2to8()"
+                            />
+                        </div>
+                    </div>
+                    <div class="stage4-content">
+                        <div class="button-container">
+                            <div class="text">
+                                <h3>Choose how to pay.</h3>
+                                <p style="margin-bottom: 10px">
+                                    Your payment is encrypted and you can change how you pay anytime.
+                                </p>
+                                <b>Secure for peace of mind. Cancel easily online. </b>
+
+                                <div class="card-credit">
+                                    <p>
+                                        Credit or Debit Card
+                                        <img src="img/img-logo/icon-VisaMaster.svg" alt="" />
+                                    </p>
+                                    <p>
+                                        Digital Walet
+                                        <img src="img/img-logo/momo_icon.svg" alt="" />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination-btns">
+                            <input
+                                type="button"
+                                value="Previous"
+                                class="previousPage stagebtn4a"
+                                onclick="stage3to8()"
+                            />
+                        </div>
+                    </div>
+                    <div class="stage5-content">
+                        <div class="button-container">
+                            <div class="text">
+                                <h3>Set up MoMo</h3>
+                                <p>Enter your MoMo mobile number.</p>
+                                <p>
+                                    Your number will also be used if you forget your password and for important account
+                                    messages. SMS fees may apply.
+                                </p>
+
+                                <div class="text-fields">
+                                    <input
+                                        type="phone"
+                                        name="phone"
+                                        required=""
+                                        onkeyup="this.setAttribute('value', this.value);"
+                                        value=""
+                                    />
+                                    <label>Enter number phone</label>
+                                </div>
+
+                                <p id="selectedPriceText"></p>
+                            </div>
+                        </div>
+                        <div class="pagination-btns">
+                            <input
+                                type="button"
+                                value="Previous"
+                                class="previousPage stagebtn5a"
+                                onclick="stage4to8()"
+                            />
+                            <input type="submit" value="Submit" class="nextPage stagebtn5b" onclick="stage6to8()" />
+                        </div>
+                    </div>
+                    <div class="stage6-content">
+                        <div class="button-container">
+                            <div class="text">
+                                <h3>Set up your credit or debit card</h3>
+                                <div class="text-fields">
+                                    <input
+                                        type="number"
+                                        name="number"
+                                        required=""
+                                        onkeyup="this.setAttribute('value', this.value);"
+                                        value=""
+                                    />
+                                    <label>Card number</label>
+                                </div>
+                                <div
+                                    class="button-container"
+                                    style="display: grid; grid-template-columns: auto auto; gap: 10px"
+                                >
+                                    <div class="text-fields">
+                                        <input
+                                            type="date"
+                                            name="date"
+                                            required=""
+                                            oninput="this.setAttribute('value', this.value);"
+                                            value=""
+                                        />
+                                        <!-- <label>Expiration date </label> -->
+                                    </div>
+                                    <div class="text-fields">
+                                        <input
+                                            type="number"
+                                            name="number"
+                                            required=""
+                                            onkeyup="this.setAttribute('value', this.value);"
+                                            value=""
+                                        />
+                                        <label>CVV</label>
+                                    </div>
+                                </div>
+
+                                <div class="text-fields">
+                                    <input
+                                        type="text"
+                                        name="text"
+                                        required=""
+                                        onkeyup="this.setAttribute('value', this.value);"
+                                        value=""
+                                    />
+                                    <label>First Name</label>
+                                </div>
+                                <div class="text-fields">
+                                    <input
+                                        type="text"
+                                        name="text"
+                                        required=""
+                                        onkeyup="this.setAttribute('value', this.value);"
+                                        value=""
+                                    />
+                                    <label>Last Name</label>
+                                </div>
+
+                                <p id="selectedPrice"></p>
+                            </div>
+                        </div>
+                        <div class="pagination-btns">
+                            <input
+                                type="button"
+                                value="Previous"
+                                class="previousPage stagebtn6a"
+                                onclick="stage4to8()"
+                            />
+                            <input type="submit" value="Submit" class="nextPage stagebtn6b" onclick="stage7to8()" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- END FORM -->
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-left">
+                <h3>Payment Method</h3>
+                <div class="credit-cards">
+                    <img src="img/img-logo/visa.png" alt="" />
+                    <img src="img/img-logo/mastercard.png" alt="" />
+                    <img src="img/img-logo/paypal.png" alt="" />
+                </div>
+                <p class="footer-copyright">2023 Group 3</p>
+            </div>
+
+            <div class="footer-center">
+                <h4 class="footer-contact">Contact</h4>
+                <div>
+                    <ion-icon name="location-outline"></ion-icon>
+                    <p><span>Hồ Chí Minh</span> 391A Đ. Nam Kỳ Khởi Nghĩa</p>
+                </div>
+                <div>
+                    <ion-icon name="call-outline"></ion-icon>
+                    <p>+098-157-89-20</p>
+                </div>
+                <div>
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <p><a href="#">support@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <p class="footer-about">
+                    <span>About</span>
+                    Cái gì đó
+                </p>
+
+                <div class="footer-media">
+                    <a href="#" class="icon" style="--color: #3b5998">
+                        <span><ion-icon name="logo-facebook"></ion-icon></span>
+                    </a>
+                    <a href="#" class="icon" style="--color: #1da1f2">
+                        <span><ion-icon name="logo-twitter"></ion-icon></span>
+                    </a>
+                    <a href="#" class="icon" style="--color: #34a853">
+                        <span><ion-icon name="logo-google"></ion-icon></span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="js/javascript.js"></script>
+
+    <script>
+        document.querySelectorAll('.card-price').forEach((link) => {
+            link.addEventListener('click', function () {
+                this.classList.add('active');
+                const siblings = this.parentElement.querySelectorAll('.card-price');
+                siblings.forEach((sibling) => {
+                    if (sibling !== this) {
+                        sibling.classList.remove('active');
+                    }
+                });
+            });
+        });
+
+        let signupContent = document.querySelector('.signup-form-container'),
+            stagebtn1b = document.querySelector('.stagebtn1b'),
+            stagebtn2a = document.querySelector('.stagebtn2a'),
+            stagebtn2b = document.querySelector('.stagebtn2b'),
+            stagebtn3a = document.querySelector('.stagebtn3a'),
+            stagebtn3b = document.querySelector('.stagebtn3b'),
+            stagebtn4a = document.querySelector('.stagebtn4a'),
+            stagebtn4b = document.querySelector('.stagebtn4b'),
+            stagebtn5a = document.querySelector('.stagebtn5a'),
+            stagebtn5b = document.querySelector('.stagebtn5b'),
+            stagebtn6a = document.querySelector('.stagebtn6a'),
+            stagebtn6b = document.querySelector('.stagebtn6b'),
+            signupContent1 = document.querySelector('.stage1-content'),
+            signupContent2 = document.querySelector('.stage2-content'),
+            signupContent3 = document.querySelector('.stage3-content'),
+            signupContent4 = document.querySelector('.stage4-content'),
+            signupContent5 = document.querySelector('.stage5-content'),
+            signupContent6 = document.querySelector('.stage6-content');
+
+        signupContent2.style.display = 'none';
+        signupContent3.style.display = 'none';
+        signupContent4.style.display = 'none';
+        signupContent5.style.display = 'none';
+        signupContent6.style.display = 'none';
+
+        function stage1to8() {
+            signupContent1.style.display = 'block';
+            signupContent2.style.display = 'none';
+            signupContent3.style.display = 'none';
+            signupContent4.style.display = 'none';
+            signupContent5.style.display = 'none';
+            signupContent6.style.display = 'none';
+        }
+
+        function stage2to8() {
+            signupContent1.style.display = 'none';
+            signupContent2.style.display = 'block';
+            signupContent3.style.display = 'none';
+            signupContent4.style.display = 'none';
+            signupContent5.style.display = 'none';
+            signupContent6.style.display = 'none';
+            document.querySelector('.stageno-1').innerText = '✔';
+            document.querySelector('.stageno-1').style.backgroundColor = '#dc0000';
+            document.querySelector('.stageno-1').style.color = '#fff';
+        }
+
+        function stage3to8() {
+            signupContent1.style.display = 'none';
+            signupContent2.style.display = 'none';
+            signupContent3.style.display = 'block';
+            signupContent4.style.display = 'none';
+            signupContent5.style.display = 'none';
+            signupContent6.style.display = 'none';
+
+            const cards = document.querySelectorAll('.cards-price .card-price');
+            const selectedPriceText = document.getElementById('selectedPriceText');
+            const selectedPrice = document.getElementById('selectedPrice');
+
+            cards.forEach((card) => {
+                card.addEventListener('click', function () {
+                    const price = this.querySelector('.title-price p:last-child').textContent;
+                    selectedPriceText.textContent = price;
+                    selectedPrice.textContent = price;
+                    stage4to8();
+                });
+            });
+        }
+
+        let selectedPrice = null;
+        let selectedPriceText = null;
+
+        function removeActiveClass(targetElement) {
+            const cards = targetElement.querySelectorAll('.card-price');
+            cards.forEach((card) => {
+                card.classList.remove('active');
+            });
+
+            selectedPrice = targetElement.querySelector('.title-price p:last-child').textContent.trim();
+            this.classList.add('active');
+
+            if (selectedPriceText) {
+                selectedPriceText.textContent = selectedPrice;
+            }
+        }
+
+        function stage4to8() {
+            signupContent1.style.display = 'none';
+            signupContent2.style.display = 'none';
+            signupContent3.style.display = 'none';
+            signupContent4.style.display = 'block';
+            signupContent5.style.display = 'none';
+            signupContent6.style.display = 'none';
+
+            document.querySelector('.stageno-2').innerText = '✔';
+            document.querySelector('.stageno-2').style.backgroundColor = '#dc0000';
+            document.querySelector('.stageno-2').style.color = '#fff';
+        }
+
+        function stage5to8() {
+            signupContent1.style.display = 'none';
+            signupContent2.style.display = 'none';
+            signupContent3.style.display = 'none';
+            signupContent4.style.display = 'none';
+            signupContent5.style.display = 'block';
+            signupContent6.style.display = 'none';
+        }
+
+        function removeActiveClass() {
+            document.querySelectorAll('.card-credit p').forEach((link) => {
+                link.classList.remove('active');
+            });
+        }
+
+        document.querySelectorAll('.card-credit p').forEach((link) => {
+            link.addEventListener('click', function () {
+                removeActiveClass();
+                this.classList.add('active');
+
+                signupContent1.style.display = 'none';
+                signupContent2.style.display = 'none';
+                signupContent3.style.display = 'none';
+                signupContent4.style.display = 'none';
+                signupContent5.style.display = 'none';
+                signupContent6.style.display = 'none';
+
+                if (this.textContent.includes('Credit or Debit Card')) {
+                    signupContent6.style.display = 'block';
+                } else if (this.textContent.includes('Digital Walet')) {
+                    signupContent5.style.display = 'block';
+                }
+            });
+        });
+    </script>
+
+    <script>
+        function validateFieldsAndProceed() {
+            var email = document.getElementById('email');
+            var password = document.getElementById('password');
+
+            if (email.value.trim() === '') {
+                alert('Vui lòng nhập địa chỉ email.');
+                return;
+            }
+
+            if (password.value.trim() === '') {
+                alert('Vui lòng nhập mật khẩu.');
+                return;
+            }
+
+            stage2to8(); // Chuyển đến trang tiếp theo nếu thông tin hợp lệ
+        }
+    </script>
+</html>

@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Movie - Best movie collections</title>
+
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+
+        <!-- Ionicons -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+        <!-- Owl-Carousel-2 CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+            integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+            integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="header">
+            <div class="container">
+                <div class="header-left">
+                    <div class="menuToggle">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </div>
+                    <div class="header-brand">
+                        <a href="home.html">
+                            <img src="img/img-logo/logo.png" alt="" />
+                        </a>
+                    </div>
+                    <!-- header-links -->
+                    <div class="header-links">
+                        <li class="dropdown active">
+                            <a href="home.html" class="header-link"> Trang Chủ </a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="header-link">
+                                Danh Mục
+                                <ion-icon name="caret-down-outline"></ion-icon>
+                            </a>
+                            <ul class="dropdown-menu-mega">
+                                <li><a href="#">Phim Lẻ</a></li>
+                                <li><a href="#">Phim Bộ</a></li>
+                                <li><a href="#">Phim Truyền Hình</a></li>
+                                <li><a href="#">Phim Chiếu Rạp</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="header-link">
+                                Thể Loại
+                                <ion-icon name="caret-down-outline"></ion-icon>
+                            </a>
+                            <ul class="dropdown-menu-mega">
+                                <li><a href="">Kinh Dị</a></li>
+                                <li><a href="">Gia Đình</a></li>
+                                <li><a href="">Tình Cảm</a></li>
+                                <li><a href="">Viễn Tưởng</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="header-link">
+                                Quốc Gia
+                                <ion-icon name="caret-down-outline"></ion-icon>
+                            </a>
+                            <ul class="dropdown-menu-mega">
+                                <li><a href="">Hàn Quốc</a></li>
+                                <li><a href="">Trung Quốc</a></li>
+                                <li><a href="">Mỹ</a></li>
+                                <li><a href="">Thái Lan</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="header-link">
+                                Năm
+                                <ion-icon name="caret-down-outline"></ion-icon>
+                            </a>
+                            <ul class="dropdown-menu-mega">
+                                <li><a href="">2000</a></li>
+                                <li><a href="">2010</a></li>
+                                <li><a href="">2020</a></li>
+                                <li><a href="">2023</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <!-- header-links--end -->
+                </div>
+                <div class="header-right">
+                    <div class="header-search">
+                        <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+                        <div class="searchBox">
+                            <input type="text" placeholder="Search here..." class="searchInput" />
+                            <ion-icon name="search-outline" class="search"></ion-icon>
+                            <div class="searchMovie">
+                                <a href="#" class="movie">
+                                    <img src="img/img-movie/penthouses.jpg" alt="" />
+                                    <div class="content-movie">
+                                        <h3>
+                                            Snowdrop
+                                            <p>
+                                                Romance, 2021, <span>IMDB</span>
+                                                <ion-icon name="star-outline"></ion-icon> 8.1
+                                            </p>
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-user">
+                        <img src="img/img-cast/jisoo-blackpink.jfif" alt="user" class="userBtn" />
+                        <div class="profile">
+                            <div class="content">
+                                <div class="user-info">
+                                    <img src="img/img-cast/jisoo-blackpink.jfif" alt="user" />
+                                    <h2>Kim Ji-Soo</h2>
+                                </div>
+                                <hr />
+                                <a href="#" class="profile-link">
+                                    <img src="img/user/profile.png" alt="" />
+                                    <p>Edit Profile</p>
+                                    <span> > </span>
+                                </a>
+                                <a href="#" class="profile-link">
+                                    <img src="img/user/setting.png" alt="" />
+                                    <p>Setting & Privacy</p>
+                                    <span> > </span>
+                                </a>
+                                <a href="#" class="profile-link">
+                                    <img src="img/user/help.png" alt="" />
+                                    <p>help & Support</p>
+                                    <span> > </span>
+                                </a>
+                                <a href="#" class="profile-link">
+                                    <img src="img/user/logout.png" alt="" />
+                                    <p>Logout</p>
+                                    <span> > </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- END HEADER -->
+
+        <!-- MOVIE BANNER -->
+        <div class="movies-banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide movie-banner">
+                    <video src="movie/CarlsDate.mp4" class="background-movie" muted autoplay playsinline></video>
+                    <div class="movie-content">
+                        <h2 class="movieTitle">Carl's Date</h2>
+                        <h4>
+                            <span>2022</span>
+                            <span><i>IMDB</i><ion-icon name="star-outline"></ion-icon> 6.8</span>
+                            <span>United State</span>
+                            <span>Animation</span>
+                        </h4>
+                        <p class="details">
+                            Carl Fredricksen reluctantly agrees to go on a date with a lady friend-but admittedly has no
+                            idea how dating works these days. Ever the helpful friend, Dug steps in to calm Carl's
+                            pre-date jitters and offer some tried-and-true tips for making friends-if you're a dog.
+                        </p>
+                        <div class="buttons">
+                            <a href="#">
+                                <ion-icon name="play-outline"></ion-icon>
+                                Play
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHIM CHIẾU RẠP -->
+        <div class="card-movie">
+            <h4>Phim Chiếu Rạp</h4>
+            <div class="cards swiper-wrapper">
+                <a onclick="window.location.href = 'chi-tiet.html'" class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- PHIM TRUYỀN HÌNH -->
+        <div class="card-movie">
+            <h4>Phim Truyền Hình</h4>
+            <div class="cards swiper-wrapper">
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- PHIM HOT -->
+        <div class="card-movie">
+            <h4>Phim Hot</h4>
+            <div class="cards swiper-wrapper">
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- BANNER -->
+        <div class="banners">
+            <div class="banner swiper-wrapper">
+                <a href="#" class="item swiper-slide">
+                    <img src="img/img-banner/khiemhayvephiaanh.webp" alt="" />
+                </a>
+                <a href="#" class="item swiper-slide">
+                    <img src="img/img-banner/culuanenduyen.webp" alt="" />
+                </a>
+            </div>
+        </div>
+
+        <!-- PHIM HOẠT HÌNH -->
+        <div class="card-movie">
+            <h4>Phim Hoạt Hình</h4>
+            <div class="cards swiper-wrapper">
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- PHIM VIỄN TƯỞNG -->
+        <div class="card-movie">
+            <h4>Phim Viễn Tưởng</h4>
+            <div class="cards swiper-wrapper">
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- VIDEO BANNER -->
+        <div class="video-banner">
+            <div class="video-box">
+                <video src="movie/CarlsDate.mp4" muted autoplay></video>
+            </div>
+            <div class="video-banner-text">
+                <div class="title">Snowdrop</div>
+                <div class="content">
+                    <p>2022</p>
+                    <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 6.8</p>
+                    <p>United State</p>
+                    <p>Animation</p>
+                </div>
+                <div class="details">
+                    Carl Fredricksen reluctantly agrees to go on a date with a lady friend-but admittedly has no idea
+                    how dating works these days. Ever the helpful friend, Dug steps in to calm Carl's pre-date jitters
+                    and offer some tried-and-true tips for making friends-if you're a dog.
+                </div>
+                <div class="buttons">
+                    <div class="buttons">
+                        <a href="#" id="play-button">
+                            <ion-icon name="play-outline"></ion-icon>
+                            Play
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHIM GIA ĐÌNH -->
+        <div class="card-movie">
+            <h4>Phim Gia Đình</h4>
+            <div class="cards swiper-wrapper">
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- PHIM TÌNH CẢM -->
+        <div class="card-movie">
+            <h4>Phim Tình Cảm</h4>
+            <div class="cards swiper-wrapper">
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-left">
+                <h3>Payment Method</h3>
+                <div class="credit-cards">
+                    <img src="img/img-logo/visa.png" alt="" />
+                    <img src="img/img-logo/mastercard.png" alt="" />
+                    <img src="img/img-logo/paypal.png" alt="" />
+                </div>
+                <p class="footer-copyright">2023 Group 3</p>
+            </div>
+
+            <div class="footer-center">
+                <h4 class="footer-contact">Contact</h4>
+                <div>
+                    <ion-icon name="location-outline"></ion-icon>
+                    <p><span>Hồ Chí Minh</span> 391A Đ. Nam Kỳ Khởi Nghĩa</p>
+                </div>
+                <div>
+                    <ion-icon name="call-outline"></ion-icon>
+                    <p>+098-157-89-20</p>
+                </div>
+                <div>
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <p><a href="#">support@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <p class="footer-about">
+                    <span>About</span>
+                    Cái gì đó
+                </p>
+
+                <div class="footer-media">
+                    <a href="#" class="icon" style="--color: #3b5998">
+                        <span><ion-icon name="logo-facebook"></ion-icon></span>
+                    </a>
+                    <a href="#" class="icon" style="--color: #1da1f2">
+                        <span><ion-icon name="logo-twitter"></ion-icon></span>
+                    </a>
+                    <a href="#" class="icon" style="--color: #34a853">
+                        <span><ion-icon name="logo-google"></ion-icon></span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Jquery -->
+        <script
+            src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <!-- Owl-Carousel-2 JS -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <script src="js/javascript.js"></script>
+    </body>
+</html>

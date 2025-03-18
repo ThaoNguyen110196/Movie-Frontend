@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Movie - Best movie collections</title>
+
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+
+        <!-- Ionicons -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+        <!-- Owl-Carousel-2 CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+            integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+            integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="header">
+            <div class="container">
+                <div class="header-left">
+                    <div class="menuToggle">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </div>
+                    <div class="header-brand">
+                        <a href="index.html">
+                            <img src="img/img-logo/logo.png" alt="" />
+                        </a>
+                    </div>
+                    <!-- header-links -->
+                    <div class="header-links">
+                        <li class="dropdown active">
+                            <a href="index.html" class="header-link"> Trang Chủ </a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="header-link">
+                                Danh Mục
+                                <ion-icon name="caret-down-outline"></ion-icon>
+                            </a>
+                            <ul class="dropdown-menu-mega">
+                                <li><a href="#">Phim Lẻ</a></li>
+                                <li><a href="#">Phim Bộ</a></li>
+                                <li><a href="#">Phim Truyền Hình</a></li>
+                                <li><a href="#">Phim Chiếu Rạp</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="header-link">
+                                Thể Loại
+                                <ion-icon name="caret-down-outline"></ion-icon>
+                            </a>
+                            <ul class="dropdown-menu-mega">
+                                <li><a href="">Kinh Dị</a></li>
+                                <li><a href="">Gia Đình</a></li>
+                                <li><a href="">Tình Cảm</a></li>
+                                <li><a href="">Viễn Tưởng</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="header-link">
+                                Quốc Gia
+                                <ion-icon name="caret-down-outline"></ion-icon>
+                            </a>
+                            <ul class="dropdown-menu-mega">
+                                <li><a href="">Hàn Quốc</a></li>
+                                <li><a href="">Trung Quốc</a></li>
+                                <li><a href="">Mỹ</a></li>
+                                <li><a href="">Thái Lan</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="header-link">
+                                Năm
+                                <ion-icon name="caret-down-outline"></ion-icon>
+                            </a>
+                            <ul class="dropdown-menu-mega">
+                                <li><a href="">2000</a></li>
+                                <li><a href="">2010</a></li>
+                                <li><a href="">2020</a></li>
+                                <li><a href="">2023</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <!-- header-links--end -->
+                </div>
+                <div class="header-right">
+                    <div class="header-search">
+                        <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+                        <div class="searchBox">
+                            <input type="text" placeholder="Search here..." class="searchInput" />
+                            <ion-icon name="search-outline" class="search"></ion-icon>
+                            <div class="searchMovie">
+                                <a href="#" class="movie">
+                                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                                    <div class="content-movie">
+                                        <h3>
+                                            Dracula
+                                            <p>
+                                                Romance, 2021, <span>IMDB</span>
+                                                <ion-icon name="star-outline"></ion-icon> 8.1
+                                            </p>
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-user">
+                        <ion-icon name="person-circle-outline" class="userBtn"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- END HEADER -->
+
+        <!-- INFO MOVIE -->
+        <div class="info-movie">
+            <div class="container">
+                <a href="movie.html#up" class="poster-movie show">
+                    <img src="img/img-movie/Snow-drop.jfif" alt="" />
+                </a>
+                <div class="content-movie">
+                    <div class="movie-title">SnowDrop</div>
+                    <div class="movie-details">
+                        <div class="set">
+                            <label for="">Release Date</label>
+                            <span><a href="#">2022</a></span>
+                        </div>
+                        <div class="set">
+                            <label for="">Running time</label>
+                            <span>1h 55min</span>
+                        </div>
+                        <div class="set">
+                            <label for="">Gener</label>
+                            <span><a href="">Crime</a>,<a href=""> Drama</a>, <a href="">Romance</a></span>
+                        </div>
+                        <div class="set">
+                            <label for="">Country</label>
+                            <span><a href="">Hàn Quốc</a></span>
+                        </div>
+                        <div class="set">
+                            <label for="">IDMB</label>
+                            <span><ion-icon name="star-outline"></ion-icon> 8.1</span>
+                        </div>
+                    </div>
+                    <div class="movie-description">
+                        Adapted from the handwritten notes of a man who escaped from a political prison camp in North
+                        Korea, "Snowdrop" is set against the backdrop of the 1987 Democracy Movement in South Korea.
+                    </div>
+                    <div class="movie-cast">
+                        <div class="header-movie-cast">Cast</div>
+                        <div class="cast-list">
+                            <a href="" class="cast">
+                                <img src="img/img-cast/jisoo-blackpink.jfif" alt="" />
+                                <label for="">Kim Ji-soo</label>
+                            </a>
+                            <a href="" class="cast">
+                                <img src="img/img-cast/jisoo-blackpink.jfif" alt="" />
+                                <label for="">Kim Ji-soo</label>
+                            </a>
+                            <a href="" class="cast">
+                                <img src="img/img-cast/jisoo-blackpink.jfif" alt="" />
+                                <label for="">Kim Ji-soo</label>
+                            </a>
+                            <a href="" class="cast">
+                                <img src="img/img-cast/jisoo-blackpink.jfif" alt="" />
+                                <label for="">Kim Ji-soo</label>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COMMENT -->
+        <div class="comment-section">
+            <div class="comments-wrp">
+                <div class="comment-wrp">
+                    <div class="comment containers">
+                        <div class="c-controls">
+                            <a class="reply"
+                                ><img src="img/img-comment/icon-reply.svg" alt="" class="control-icon" />Reply</a
+                            >
+                        </div>
+                        <div class="c-user">
+                            <img src="img/img-user/Park-Bo-Gum.jpg" alt="" class="usr-img" />
+                            <p class="usr-name">Park Bo Gum</p>
+                            <p class="cmnt-at">2 hours ago</p>
+                        </div>
+                        <p class="c-text">
+                            <span class="reply-to"></span>
+                            <span class="c-body">
+                                HImpressive! Though it seems the drag feature could be improved. But overall it looks
+                                incredible. You've nailed the design and the responsiveness at various breakpoints works
+                                really well.
+                            </span>
+                        </p>
+                    </div>
+                    <!--comment-->
+                    <div class="replies comments-wrp"></div>
+                    <!--replies-->
+                </div>
+
+                <div class="comment-wrp">
+                    <div class="comment containers">
+                        <div class="c-controls">
+                            <a class="reply"
+                                ><img src="img/img-comment/icon-reply.svg" alt="" class="control-icon" />Reply</a
+                            >
+                        </div>
+                        <div class="c-user">
+                            <img src="img/img-user/Cha-Eun-Woo.jpg" alt="" class="usr-img" />
+                            <p class="usr-name">Cha Eun Woo</p>
+                            <p class="cmnt-at">2 weeks ago</p>
+                        </div>
+                        <p class="c-text">
+                            <span class="reply-to"></span>
+                            <span class="c-body"> Hi </span>
+                        </p>
+                    </div>
+
+                    <!--comment-->
+                    <div class="replies comments-wrp">
+                        <div class="comment containers">
+                            <div class="c-controls">
+                                <a class="reply"
+                                    ><img src="img/img-comment/icon-reply.svg" alt="" class="control-icon" />Reply</a
+                                >
+                            </div>
+                            <div class="c-user">
+                                <img src="img/img-user/JungKook-BTS.jpg" alt="" class="usr-img" />
+                                <p class="usr-name">JungKook</p>
+                                <p class="cmnt-at">1 week ago</p>
+                            </div>
+                            <p class="c-text">
+                                <span class="reply-to">@Cha Eun Woo</span>
+                                <span class="c-body"> Hi </span>
+                            </p>
+                        </div>
+                    </div>
+                    <!--comment-->
+                    <div class="replies comments-wrp"></div>
+                    <!--replies-->
+                </div>
+            </div>
+            <div class="reply-input containers">
+                <img src="img/img-cast/jisoo-blackpink.jfif" alt="" class="usr-img" />
+                <textarea class="cmnt-input" placeholder="Add a comment..."></textarea>
+                <button class="bu-primary">SEND</button>
+            </div>
+
+            <div class="modal-wrp invisible">
+                <div class="modal container">
+                    <h3>Delete comment</h3>
+                    <p>
+                        Are you sure you want to delete this comment? This will remove the comment and can't be undone.
+                    </p>
+                    <button class="yes">YES, DELETE</button>
+                    <button class="no">NO, CANCEL</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const replyButtons = document.querySelectorAll('.reply');
+                const sendButton = document.querySelector('.reply-input .bu-primary');
+                const textarea = document.querySelector('.reply-input .cmnt-input');
+                const commentsContainer = document.querySelector('.comments-wrp');
+
+                replyButtons.forEach((replyButton) => {
+                    replyButton.addEventListener('click', (event) => {
+                        event.stopPropagation(); // Prevent click event from bubbling to parent elements
+                        const commentWrapper = replyButton.closest('.comment-wrp');
+                        const repliesContainer = commentWrapper.querySelector('.replies.comments-wrp');
+                        const existingReplyInput = repliesContainer.querySelector('.reply-input');
+
+                        if (!existingReplyInput) {
+                            const replyInput = document.createElement('div');
+                            replyInput.classList.add('reply-input', 'containers');
+                            replyInput.innerHTML = `
+          <img src="img/img-cast/jisoo-blackpink.jfif" alt="" class="usr-img" />
+          <textarea class="cmnt-input" placeholder="Add a comment..."></textarea>
+          <button class="bu-primary">SEND</button>
+        `;
+                            repliesContainer.appendChild(replyInput);
+
+                            const replySendButton = replyInput.querySelector('.bu-primary');
+                            replySendButton.addEventListener('click', () => {
+                                const commentText = replyInput.querySelector('.cmnt-input').value.trim();
+                                if (commentText !== '') {
+                                    const parentComment = commentWrapper.querySelector('.comment');
+                                    const replyToElement = parentComment.querySelector('.c-user .usr-name');
+                                    const replyTo = replyToElement.textContent;
+                                    const newComment = createCommentElement(commentText, replyTo);
+                                    repliesContainer.appendChild(newComment);
+                                    replyInput.remove();
+                                }
+                            });
+                        }
+                    });
+                });
+
+                sendButton.addEventListener('click', () => {
+                    const commentText = textarea.value.trim();
+                    if (commentText !== '') {
+                        const newComment = createCommentElement(commentText);
+                        commentsContainer.appendChild(newComment);
+                        textarea.value = '';
+                    }
+                });
+
+                function createCommentElement(commentText, replyTo = null) {
+                    const commentElement = document.createElement('div');
+                    commentElement.classList.add('comment', 'containers');
+
+                    const controlsElement = document.createElement('div');
+                    controlsElement.classList.add('c-controls');
+                    controlsElement.innerHTML = `
+      <a class="delete"><img src="img/img-comment/icon-delete.svg" alt="" class="control-icon" />Delete</a>
+      <a class="edit"><img src="img/img-comment/icon-edit.svg" alt="" class="control-icon" />Edit</a>
+    `;
+
+                    const userElement = document.createElement('div');
+                    userElement.classList.add('c-user');
+                    userElement.innerHTML = `
+      <img src="img/img-cast/jisoo-blackpink.jfif" alt="" class="usr-img" />
+      <p class="usr-name">Kim Ji Soo</p>
+      <p class="cmnt-at">Just now</p>
+    `;
+
+                    const commentBody = document.createElement('p');
+                    commentBody.classList.add('c-text');
+                    commentBody.innerHTML = `
+      <span class="reply-to">${replyTo ? `@${replyTo}` : ''}</span>
+      <span class="c-body">${commentText}</span>
+    `;
+
+                    commentElement.appendChild(controlsElement);
+                    commentElement.appendChild(userElement);
+                    commentElement.appendChild(commentBody);
+
+                    return commentElement;
+                }
+            });
+        </script>
+
+        <!-- CÓ THỂ BẠN SẼ THÍCH -->
+        <div class="card-movie">
+            <h4>CÓ THỂ BẠN SẼ THÍCH</h4>
+            <div class="cards swiper-wrapper">
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="card swiper-slide">
+                    <img src="img/img-movie/chuyenchuakevedracula.webp" alt="" />
+                    <div class="rest-card">
+                        <video src="movie/ChuyenChuaKeVeDracula.mp4" muted></video>
+                        <div class="content">
+                            <h2 class="title">Dracula</h2>
+                            <div class="sub">
+                                <p>2022</p>
+                                <p><span>IMDB</span><ion-icon name="star-outline"></ion-icon> 8.1</p>
+                                <p>Romance</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-left">
+                <h3>Payment Method</h3>
+                <div class="credit-cards">
+                    <img src="img/img-logo/visa.png" alt="" />
+                    <img src="img/img-logo/mastercard.png" alt="" />
+                    <img src="img/img-logo/paypal.png" alt="" />
+                </div>
+                <p class="footer-copyright">2023 Group 3</p>
+            </div>
+
+            <div class="footer-center">
+                <h4 class="footer-contact">Contact</h4>
+                <div>
+                    <ion-icon name="location-outline"></ion-icon>
+                    <p><span>Hồ Chí Minh</span> 391A Đ. Nam Kỳ Khởi Nghĩa</p>
+                </div>
+                <div>
+                    <ion-icon name="call-outline"></ion-icon>
+                    <p>+098-157-89-20</p>
+                </div>
+                <div>
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <p><a href="#">support@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <p class="footer-about">
+                    <span>About</span>
+                    Cái gì đó
+                </p>
+
+                <div class="footer-media">
+                    <a href="#" class="icon" style="--color: #3b5998">
+                        <span><ion-icon name="logo-facebook"></ion-icon></span>
+                    </a>
+                    <a href="#" class="icon" style="--color: #1da1f2">
+                        <span><ion-icon name="logo-twitter"></ion-icon></span>
+                    </a>
+                    <a href="#" class="icon" style="--color: #34a853">
+                        <span><ion-icon name="logo-google"></ion-icon></span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Jquery -->
+        <script
+            src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <!-- Owl-Carousel-2 JS -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <script src="js/javascript.js"></script>
+    </body>
+</html>
