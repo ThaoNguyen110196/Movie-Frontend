@@ -1,4 +1,4 @@
-# Movie Website Frontend
+# Movie Website - Frontend
 
 ## 🚀Brief Description:
 
